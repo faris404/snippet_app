@@ -1,4 +1,4 @@
-## Sippet App
+## Snippet App
 
 simple text storing app
 
