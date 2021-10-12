@@ -12,7 +12,7 @@ class POSTSnippetsSerializer(serializers.ModelSerializer):
 
 
 class SnippetLinkSerializer(serializers.HyperlinkedModelSerializer):
-    url = serializers.HyperlinkedIdentityField(view_name='snippets-details',lookup_field='id', read_only=True)
+    url = serializers.HyperlinkedIdentityField(view_name='snippets-details',lookup_field='pk', read_only=True)
     class Meta:
         model = Snippets
         fields = ['id','title', 'text', 'create_at','updated_at','url']
